@@ -5,9 +5,16 @@
 #include <vector>
 #include <WinSock2.h>
 #include <iostream>
+#include <string>
+#include <process.h> //_beginethread µÈ
 #pragma comment(lib, "ws2_32")
 
+//×î´óÁ¬½Ó¿Í»§¶ËÊıÁ¿
+#define MAX_CLIENT_SEQUENCE 10
+
 CRITICAL_SECTION cs; //ÁÙ½çÇø
+bool exitApp = false; //ÊÇ·ñ¹Ø±Õapp£¬Èç¹ûtrue±íÊ¾¹Ø±Õµ±Ç°app
+
 class ServerSocket{
 private :
 	std::string ip = "127.0.0.1";
@@ -41,7 +48,6 @@ private :
 		sockaddrIn.sin_addr.S_un.S_addr = inet_addr(this->ip.c_str()); //ip
 		//ÕâÀïµÄhtonsÊÇ½«±¾µØµÄ×Ö½ÚĞòÁĞ±ä³ÉÍøÂç×Ö½ÚĞòÁĞ£¨´óÍ·³¯Ïò£¬Èç¹û±¾µØÊÇĞ¡Í·³¯ÉÏ£¨Èçx86cpu£©°Ñ×Ö½ÚµÄĞòÁĞµ¹¹ıÀ´´æ·Å), Ìá¸ß¼æÈİĞÔ
 		sockaddrIn.sin_port = htons(this->port);  //¶Ë¿Ú ÕâÀïĞèÒªÌá¹©ÍøÂç×Ö½ÚĞòµÄ¶Ë¿ÚºÅ
-		std::cout << "ÍøÂç¶Ë¿ÚºÅ £º" << sockaddrIn.sin_port << "  " << this->port << std::endl;
 		sockaddrIn.sin_family = PF_INET; //Ğ­Òé×å
 
 		//µÚ¶ş¸ö²ÎÊıĞèÒª´Ósockaddr_in ÀàĞÍ×ª»»¹ıÀ´£¬ÓĞÀúÊ·Ô­Òò¡£ sockaddr ÆäÊµÓë sockaddr_in ¶¼Õ¼16¸ö×Ö½Ú£¬ÆäÖĞ¶¼ÊÇÇ°Á½¸ö×Ô¼º±íÊ¾
@@ -54,7 +60,7 @@ private :
 			std::cout << "socket bind Ê§°Ü£¬ ´íÎó´úÂëÎª£º " << WSAGetLastError() << std::endl;
 			exit(-1);
 		}
-		listen(so, 10); //¼àÌı ÇëÇó¶ÓÁĞÉèÖÃ×î´ó³¤¶ÈÎ» 10
+		listen(so, MAX_CLIENT_SEQUENCE); //¼àÌı ÇëÇó¶ÓÁĞÉèÖÃ×î´ó³¤¶ÈÎª 10
 	}
 public:
 	static ServerSocket & getInstance(){ 
@@ -66,20 +72,31 @@ public:
 	}
 
 	//´Ó¶ÓÀïÖĞÈ¡µÃÒ»¸öÇëÇó£¬²¢ÇÒ´¦Àí¿Í»§¶ËÇëÇó
-	void openClient(){
+	bool openClient(){
+		//´´½¨¿Í»§¶Ë¶ÔÏó
 		ServerSocket::ClientSocket * client = new ServerSocket::ClientSocket;
-		//ĞÂ¿ªÒ»¸öÏß³ÌÀ´´¦ÀíÓëµ±Ç°client socketµÄÍ¨ĞÅ
+		//Ìí¼Ó¿Í»§¶Ë¶ÔÏóµ½¿Í»§¶ËÁĞ±í
+		serverSocket->clientList.push_back(client);
+		//´¦ÀíÍ¨ĞÅ£¬¿ªÒ»¸öÏß³ÌÎ¬»¤µ±Ç°µÄclientÍ¨ĞÅ
+		client->runHandle = (HANDLE)_beginthreadex(nullptr, 0, ClientSocket::run, client, 0, nullptr);
+		if (nullptr == client->runHandle){
+			return false;
+		}
+		//Ìí¼Ó¾ä±úµ½ÁĞ±í
+		serverSocket->subThreadHandles.push_back(client->runHandle);
+		return true;
 	}
 
 	class ClientSocket {
 	private:
 		SOCKET client;
 	public:
+		HANDLE handles[2]; //±£´æ½ÓÊÜ¸ú·¢ËÍÏß³Ì¾ä±ú
+		HANDLE runHandle; //±£´æµ÷ÓÃrunº¯Êı²úÉúµÄĞÂ¾ä±ú
 		ClientSocket(){
 			sockaddr socka; //ÓÃÀ´´æĞÂ½ÓÊÜÌ×½Ó×ÖµØÖ·
 			int socklen = sizeof(sockaddr); //´æÌ×½Ó×ÖµØÖ·½á¹¹µÄ³¤¶È 
 			this->client = accept(serverSocket->so, &socka, &socklen); //·şÎñÆ÷¶Ëµ÷ÓÃaccept´ÓÁ¬½Ó¶ÓÁĞÈ¡³öÀ´µÚÒ»¸ö¡£¿Í»§¶Ë¿Éµ÷ÓÃconnect½øĞĞÁ¬½Ó
-			serverSocket->clientList.push_back(this);
 		}
 		~ClientSocket(){
 			closesocket(this->client); //¹Ø±Õ¿Í»§¶ËµÄsocket
@@ -90,42 +107,102 @@ public:
 					break;
 				}
 			}
-		}
-		//´´½¨Ïß³Ìµ÷ÓÃº¯Êı
-		static void run(ClientSocket * pClientSocket){
-			pClientSocket->client;
-			//¿ªÒ»¸öÏß³Ì½ÓÊÜ¿Í»§¶ËÊäÈë
-			//¿ªÒ»¸öÏß³Ì½ÓÊÜ·şÎñÆ÷¶ËÊäÈë²¢ÇÒ·¢ËÍ¸ø¿Í»§¶Ë
-		}
-		//½ÓÊÜ¿Í»§¶ËÏûÏ¢²¢´òÓ¡µ½¿ØÖÆÌ¨
-		void printMsgFromClient(std::ostream & os){
-			char buff[1024 + 1] = { 0 };
-			int len = 0;
-			do{
-				int len = recv(this->client, buff, 1024, 0);
-				//ÒÔÏÂÒì³£´¦ÀíÔÚÊµ¼Ê¿ª·¢»á¸üÏ¸ÖÂ£¬ÕâÖ»ÊÇ×öÁË´òÓ¡´¦Àí
-				if (len == SOCKET_ERROR){
-					os << "Óë¿Í»§¶Ë½øĞĞÊı¾İ´«ÊäÊ±³öÏÖ´íÎó£¬´íÎó´úÂëÎª£º" << WSAGetLastError() << std::endl;
-				}
-				else if (len == 0){ //Èç¹ûlen == 0 ±íÊ¾Á¬½ÓÖĞ¶Ï
-					os << "Óë¿Í»§¶ËµÄÁ¬½ÓÖĞ¶Ï...." << std::endl;
+			//½«±¾Ïß³ÌÏà¹ØµÄrunº¯Êıµ÷ÓÃ²úÉúµÄÏß³Ì¾ä±ú´Ó·şÎñÆ÷¶ÔÏó±£´æµÄ¾ä±úÁĞ±íÖĞÒÆ³ı
+			for (auto it = serverSocket->subThreadHandles.begin(); it != serverSocket->subThreadHandles.end(); ++it){
+				if (*it == this->runHandle){
+					serverSocket->subThreadHandles.erase(it);
 					break;
-				}
-			} while (true);
-		}
-
-		//´ÓÊäÈëÁ÷ÖĞµÃµ½ÊäÈë×Ö·û´®´«¸ø¿Í»§¶Ësocket
-		void sendMsg2Client(std::istream & is){
-			char buff[1024 + 1] = { 0 };
-			while (!is.eof()){
-				is >> buff;
-				if (SOCKET_ERROR == (this->client, buff, strlen(buff), 0)){ //º¯Êı·µ»Ø·¢ËÍµÄ×Ö½ÚÊı£¬Ê§°Ü»áÉèÖÃgetlasterror
-					std::cout << "Óë¿Í»§¶Ë½øĞĞÊı¾İ´«ÊäÊ±³öÏÖ´íÎó£¬´íÎó´úÂëÎª£º" << WSAGetLastError() << std::endl;
 				}
 			}
 		}
+
+		static unsigned int __stdcall run(void * parameters){
+			ClientSocket * pClientSocket = (ClientSocket*)parameters;
+			//¿ªÒ»¸öÏß³Ì·¢ËÍÏûÏ¢
+			if (nullptr == (pClientSocket->handles[1] = (HANDLE)_beginthreadex(nullptr, 0, &ClientSocket::sendMsg2Client, pClientSocket, 0, nullptr))){
+				std::cout << "´´½¨·¢ËÍÏß³ÌÊ§°Ü£¬´íÎó´úÂë" << GetLastError() << std::endl;
+				return -1;
+			}
+			//¿ªÒ»¸öÏß³Ì½ÓÊÜÏûÏ¢
+			if (nullptr == (pClientSocket->handles[0] = (HANDLE)_beginthreadex(nullptr, 0, &ClientSocket::recvMsgFromClient, pClientSocket, 0, nullptr))){
+				std::cout << "´´½¨Ğ´ÈëÏß³ÌÊ§°Ü£¬´íÎó´úÂë" << GetLastError() << std::endl;
+				return -1;
+			}
+			//µ±Ç°Ïß³ÌµÈ´ıÊäÈëÊä³öÏß³Ì
+			WaitForMultipleObjects(2, pClientSocket->handles, FALSE, INFINITE);
+
+			//¹Ø±Õ×ÓÏß³Ì¾ä±ú
+			for (int i = 0; i < 2; ++i){
+				CloseHandle(pClientSocket->handles[i]);
+			}
+			//ÊÍ·Å¿Í»§¶Ë¶ÔÏó
+			delete pClientSocket;
+			return 0;
+		}
+
+		//½ÓÊÜ¿Í»§¶ËÏûÏ¢²¢´òÓ¡µ½¿ØÖÆÌ¨
+		static unsigned int __stdcall recvMsgFromClient(void * parameters){
+			//´¦Àí²ÎÊı
+			ClientSocket * cs = (ClientSocket*)parameters;
+
+			//»ñÈ¡²¢´òÓ¡
+			char buff[1024 + 1] = { 0 };
+			int len = 0;
+			do{
+				int len = recv(cs->client, buff, 1024, 0);
+				//ÒÔÏÂÒì³£´¦ÀíÔÚÊµ¼Ê¿ª·¢»á¸üÏ¸ÖÂ£¬ÕâÖ»ÊÇ×öÁË´òÓ¡´¦Àí
+				if (len == SOCKET_ERROR){
+					std::cout << "Óë¿Í»§¶Ë½øĞĞÊı¾İ´«ÊäÊ±³öÏÖ´íÎó£¬´íÎó´úÂëÎª£º" << WSAGetLastError() << std::endl;
+					break;
+				}
+				else if (len == 0){ //Èç¹ûlen == 0 ±íÊ¾Á¬½ÓÖĞ¶Ï
+					std::cout << "Óë¿Í»§¶ËµÄÁ¬½ÓÖĞ¶Ï...." << std::endl;
+					break;
+				}
+				buff[len] = '\0'; ///Êµ¼Ê·¢ÏÖĞèÒª×Ô¼º×·¼ÓÕâ¸ö\0
+				std::cout << buff;
+			} while (true);
+			return 0;
+		}
+
+		//´ÓÊäÈëÁ÷ÖĞµÃµ½ÊäÈë×Ö·û´®´«¸ø¿Í»§¶Ësocket
+		static unsigned int __stdcall sendMsg2Client(void * parameters){
+			//´¦Àí²ÎÊı
+			ClientSocket * cs = (ClientSocket*)parameters;
+
+			//¶ÁÈë²¢·¢ËÍ
+			char buff[1024 + 1] = { 0 };
+			while (true){
+				int i;
+				for (i = 0; i < 1024; ++i){
+					std::cin.get(buff[i]);
+					if (buff[i] == '\n'){
+						i++;
+						break;
+					}
+				}
+				buff[i] = '\0';
+				if (SOCKET_ERROR == send(cs->client, buff, strlen(buff), 0)){ //º¯Êı·µ»Ø·¢ËÍµÄ×Ö½ÚÊı£¬Ê§°Ü»áÉèÖÃgetlasterror
+					std::cout << "Óë¿Í»§¶Ë½øĞĞÊı¾İ´«ÊäÊ±³öÏÖ´íÎó£¬´íÎó´úÂëÎª£º" << WSAGetLastError() << std::endl;
+					break;
+				}
+			}
+			return 0;
+		}
+
+		//·¢ËÍÏûÏ¢µ½µ±Ç°¿Í»§¶Ë
+		bool sendMsg(std::string & msg){
+			if (SOCKET_ERROR == send(this->client, msg.c_str(), msg.length(), 0)){ //º¯Êı·µ»Ø·¢ËÍµÄ×Ö½ÚÊı£¬Ê§°Ü»áÉèÖÃgetlasterror
+				std::cout << "Óë¿Í»§¶Ë½øĞĞÊı¾İ´«ÊäÊ±³öÏÖ´íÎó£¬´íÎó´úÂëÎª£º" << WSAGetLastError() << std::endl;
+				return false;
+			}
+			return true;
+		}
 	};
+	//ÒÑÁ¬½ÓµÄ¿Í»§¶Ë¶ÔÏóÁĞ±í
 	std::vector<ClientSocket *> clientList;
+	//×ÓÏß³Ì¾ä±ú¼¯ºÏ£¬Ã¿Á¬½ÓÒ»¸ö¿Í»§¶Ë¾Í±£´æÏàÓ¦µÄÏß³Ì¾ä±ú
+	std::vector<HANDLE> subThreadHandles;
 
 	//Îö¹¹£¬ÖĞ¼äÇå¿ÕclientList£¬·ÀÖ¹ÄÚÈİĞ¹Â¶
 	~ServerSocket(){
@@ -137,6 +214,13 @@ public:
 
 	//¹Ø±Õ£¬ĞèÒªÊÖ¶¯µ÷ÓÃ
 	void close(){
+		if (!subThreadHandles.empty()){
+			std::cout << "ÉĞÓĞ¿Í»§¶ËÁ¬½Óµ½ÕâÌ¨»úÆ÷£¬ÇëÈ·ÈÏÊÇ·ñ¹Ø±Õ·şÎñÆ÷(y:yes  n:no) : " << std::endl;
+			std::string s;
+			std::cin >> s;
+			if (s == "n" || s == "N")
+				return;
+		}
 		delete serverSocket;
 	}
 };
@@ -146,8 +230,13 @@ ServerSocket * ServerSocket::serverSocket = nullptr; //ÀàÖĞ¾²Ì¬±äÁ¿ÔÚĞèÒªÔÚÍâÃæ³
 int _tmain(int argc, _TCHAR* argv[])
 {
 	InitializeCriticalSection(&cs); //³õÊ¼»¯ÁÙ½çÇø±äÁ¿
-	ServerSocket serverSocket = ServerSocket::getInstance();
-	serverSocket.openClient();
+	ServerSocket & serverSocket = ServerSocket::getInstance();
+
+	//ÕâÀïÖ»ÊÇµ¥Ïß³ÌÍ¨ĞÅ£¬Èç¹ûÒª¶àÏß³Ì£¬µÃ°Ñrun·½·¨ÀïÃæĞŞ¸Ä³ÉÖ»ÓĞ½ÓÊÜÏß³Ì¡£²¢ÇÒ½«·şÎñÆ÷¶ËĞ´µÄº¯Êı·Åµ½ServerSocketÀàÀïÃæ¡£
+	if (serverSocket.openClient()){
+		std::cout << "ĞÂµÄ¿Í»§¶ËÁ¬½Óµ½·şÎñÆ÷..." << std::endl;
+	}
+	while (!serverSocket.clientList.empty()) {/*»¹ÓĞ¿Í»§¶ËÁ¬½ÓÔÚÉÏÃæ*/ }
+	std::cout << "µ±Ç°Ã»ÓĞ¿Í»§¶ËÁ¬½Óµ½·şÎñÆ÷£¬¼´½«¹Ø±Õ·şÎñÆ÷..." << std::endl;
 	return 0;
 }
-
