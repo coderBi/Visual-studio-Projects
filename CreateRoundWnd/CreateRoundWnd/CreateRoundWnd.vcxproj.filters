@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{3c1c2e25-0e06-4bfa-baad-a2267909bff0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GdiString">
+      <UniqueIdentifier>{1eefa19d-6ba6-4cef-a980-e9b23b08f3d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CreateRoundWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyImage.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="MyButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GdiString.cpp">
+      <Filter>GdiString</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyImage.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="MyButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GdiString.h">
+      <Filter>GdiString</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CreateRoundWnd.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\res\CreateRoundWnd.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\bg_light-level_02.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\bg_02.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\sys_dlg_close.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\pic_shishibaohu.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\pic_360ucenter.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\pic_360DiagnoseScan.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\pic_360Desktop.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\bg_briangle.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\icon_360Desktop.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\icon_360DiagnoseScan.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\icon_360ucenter.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\icon_shishibaohu.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\res\Image\btn_bg.png">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

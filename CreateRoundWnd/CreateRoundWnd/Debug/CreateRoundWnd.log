@@ -1,0 +1,24 @@
+﻿生成启动时间为 2015/12/13 13:42:35。
+     1>项目“D:\资料与记录（新装硬盘）\VSCode\CreateRoundWnd\CreateRoundWnd\CreateRoundWnd.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CreateRoundWnd.cpp
+         CreateRoundWnd.cpp
+     1>d:\资料与记录（新装硬盘）\vscode\createroundwnd\createroundwnd\myimage.h(41): warning C4244: “=”: 从“int”转换到“Gdiplus::REAL”，可能丢失数据
+     1>d:\资料与记录（新装硬盘）\vscode\createroundwnd\createroundwnd\myimage.h(42): warning C4244: “=”: 从“int”转换到“Gdiplus::REAL”，可能丢失数据
+     1>d:\资料与记录（新装硬盘）\vscode\createroundwnd\createroundwnd\myimage.h(43): warning C4244: “=”: 从“int”转换到“Gdiplus::REAL”，可能丢失数据
+     1>d:\资料与记录（新装硬盘）\vscode\createroundwnd\createroundwnd\myimage.h(44): warning C4244: “=”: 从“int”转换到“Gdiplus::REAL”，可能丢失数据
+     1>d:\资料与记录（新装硬盘）\vscode\createroundwnd\createroundwnd\mybutton.h(25): warning C4244: “参数”: 从“int”转换到“Gdiplus::REAL”，可能丢失数据
+     1>d:\资料与记录（新装硬盘）\vscode\createroundwnd\createroundwnd\createroundwnd.cpp(80): warning C4101: “nEvent”: 未引用的局部变量
+     1>d:\资料与记录（新装硬盘）\vscode\createroundwnd\createroundwnd\createroundwnd.cpp(79): warning C4101: “nCmdId”: 未引用的局部变量
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\资料与记录（新装硬盘）\VSCode\CreateRoundWnd\Debug\CreateRoundWnd.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\资料与记录（新装硬盘）\VSCode\CreateRoundWnd\Debug\CreateRoundWnd.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\资料与记录（新装硬盘）\VSCode\CreateRoundWnd\Debug\CreateRoundWnd.lib" /MACHINE:X86 Debug\CreateRoundWnd.res
+         Debug\CreateRoundWnd.obj
+         Debug\GdiString.obj
+         Debug\MyButton.obj
+         Debug\MyImage.obj
+         CreateRoundWnd.vcxproj -> D:\资料与记录（新装硬盘）\VSCode\CreateRoundWnd\Debug\CreateRoundWnd.exe
+     1>已完成生成项目“D:\资料与记录（新装硬盘）\VSCode\CreateRoundWnd\CreateRoundWnd\CreateRoundWnd.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.58

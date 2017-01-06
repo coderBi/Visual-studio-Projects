@@ -9,11 +9,10 @@
 #include <process.h> //_beginethread 等
 #pragma comment(lib, "ws2_32")
 
-//最大连接客户端数量
-#define MAX_CLIENT_SEQUENCE 10
+//最大等待连接客户端数量
+#define MAX_CLIENT_SEQUENCE 100
 
 CRITICAL_SECTION cs; //临界区
-bool exitApp = false; //是否关闭app，如果true表示关闭当前app
 
 class ServerSocket{
 private :
@@ -21,6 +20,7 @@ private :
 	int port = 8080;
 	SOCKET so;
 	static ServerSocket * serverSocket;  //存贮单例对象
+	int clientItems = 0; //当前连接客户端的数目 
 	//初始化sock调用所需环境
 	void initSocketCall(){ 
 		WSADATA wsData; //直译wsadata的意思是： windows socket asychronize data
@@ -60,7 +60,7 @@ private :
 			std::cout << "socket bind 失败， 错误代码为： " << WSAGetLastError() << std::endl;
 			exit(-1);
 		}
-		listen(so, MAX_CLIENT_SEQUENCE); //监听 请求队列设置最大长度为 10
+		listen(so, MAX_CLIENT_SEQUENCE); //监听 请求队列最大长度 
 	}
 public:
 	static ServerSocket & getInstance(){ 
@@ -71,19 +71,25 @@ public:
 		return * serverSocket;
 	}
 
+	int getClientItems(){
+		return this->clientItems;
+	}
+
 	//从队里中取得一个请求，并且处理客户端请求
 	bool openClient(){
 		//创建客户端对象
 		ServerSocket::ClientSocket * client = new ServerSocket::ClientSocket;
-		//添加客户端对象到客户端列表
-		serverSocket->clientList.push_back(client);
 		//处理通信，开一个线程维护当前的client通信
 		client->runHandle = (HANDLE)_beginthreadex(nullptr, 0, ClientSocket::run, client, 0, nullptr);
-		if (nullptr == client->runHandle){
+		if (nullptr == client->runHandle){ //线程创建失败
+			delete client;
 			return false;
 		}
+		//添加客户端对象到客户端列表
+		serverSocket->clientList.push_back(client);
 		//添加句柄到列表
 		serverSocket->subThreadHandles.push_back(client->runHandle);
+		ServerSocket::serverSocket->clientItems++;
 		return true;
 	}
 
@@ -235,8 +241,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	//这里只是单线程通信，如果要多线程，得把run方法里面修改成只有接受线程。并且将服务器端写的函数放到ServerSocket类里面。
 	if (serverSocket.openClient()){
 		std::cout << "新的客户端连接到服务器..." << std::endl;
+		std::cout << "当前连接客户端数量为: " << serverSocket.getClientItems() << std::endl;
 	}
-	while (!serverSocket.clientList.empty()) {/*还有客户端连接在上面*/ }
+	/*
+	通过测试，用死循环阻止程序推出是不合适的。发现这个程序会过度占用cpu资源，也就是导致cpu空转。
+		while (!serverSocket.clientList.empty()) {}
+	*/
+	
+	while (!serverSocket.clientList.empty()) {}
 	std::cout << "当前没有客户端连接到服务器，即将关闭服务器..." << std::endl;
 	return 0;
 }
