@@ -1,4 +1,4 @@
-﻿生成启动时间为 2016/12/28 16:14:31。
+﻿生成启动时间为 2017/1/19 23:59:19。
      1>项目“d:\my documents\visual studio 2013\Projects\GetSystemOperationInfo\GetSystemOperationInfo\GetSystemOperationInfo.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\GetSystemOperationInfo.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GetSystemOperationInfo.cpp
@@ -11,4 +11,4 @@
 
 生成成功。
 
-已用时间 00:00:02.92
+已用时间 00:00:03.40

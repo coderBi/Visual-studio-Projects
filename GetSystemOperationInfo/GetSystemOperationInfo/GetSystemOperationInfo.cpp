@@ -8,6 +8,7 @@
 #include "stdafx.h"
 #include <Windows.h>
 #include <iostream>
+#include <stdio.h>
 //忽略GetVersionEx这里的安全检查
 #pragma warning(disable: 4996)
 
@@ -79,7 +80,18 @@ void getSystemInfo(){
 	else {
 		std::cout << "system : unknown  " << osVersionInfo.dwMajorVersion << "." << osVersionInfo.dwMinorVersion << std::endl;
 	}
-
+	
+	//处理器情况
+	SYSTEM_INFO sysInfo;
+	GetSystemInfo(&sysInfo);
+	printf("中央处理器架构(返回的是处理器掩码)：%u\n", sysInfo.wProcessorArchitecture); //主流的cpu架构有intel amd等
+	printf("处理器的数量%u\n", sysInfo.dwNumberOfProcessors);
+	printf("处理器级别：%u\n", sysInfo.wProcessorLevel);
+	printf("处理器类型: %u\n", sysInfo.dwProcessorType);
+	printf("处理器版本：%u\n", sysInfo.wProcessorRevision);
+	printf("最大寻址单元：%u\n", sysInfo.lpMaximumApplicationAddress);
+	printf("最小寻址单元：%u\n", sysInfo.lpMinimumApplicationAddress);
+	
 }
 
 int _tmain(int argc, _TCHAR* argv[])
