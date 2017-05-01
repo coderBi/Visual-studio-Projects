@@ -1,0 +1,158 @@
+﻿生成启动时间为 2017/4/22 15:00:34。
+     1>项目“d:\my documents\visual studio 2013\Projects\winpcap_filter_ftp\winpcap_filter_ftp\winpcap_filter_ftp.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of basic_dump.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\basic_dump\basic_dump.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\basic_dump.c.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of basic_dump_ex.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\basic_dump_ex\basic_dump_ex.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\basic_dump_ex.c.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of iflist.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\iflist\iflist.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\iflist\iflist.c.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of pcap_filter.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\pcap_filter\pcap_filter.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\pcap_filter\pcap_filter.c.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of pktdump_ex.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\pktdump_ex\pktdump_ex.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\pktdump_ex\pktdump_ex.c.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of readfile.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\readfile\readfile.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\readfile.c.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of readfile_ex.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\readfile_ex\readfile_ex.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\readfile_ex.c.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of savedump.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\savedump\savedump.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\savedump.c.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of sendpack.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\sendpack\sendpack.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\sendpack.c.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of udpdump.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\UDPdump\udpdump.c, C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\UDPdump\udpdump.c.
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\winpcap_filter_ftp.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\basic_dump\basic_dump.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\basic_dump_ex\basic_dump_ex.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\iflist\iflist.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\pcap_filter\pcap_filter.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\pktdump_ex\pktdump_ex.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\readfile\readfile.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\readfile_ex\readfile_ex.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\savedump\savedump.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\sendpack\sendpack.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\UDPdump\udpdump.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\iflist\iflist.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\basic_dump.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\basic_dump_ex.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\readfile.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\readfile_ex.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\savedump.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\sendpack.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\PacketDriver\GetMacAddress\GetMacAddress.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\PacketDriver\TestPacketCapture\TestPacketCapture.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\PacketDriver\TestPacketSend\TestPacketSend.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\pcap_filter\pcap_filter.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\pktdump_ex\pktdump_ex.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\sendcap\sendcap.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\smp_1\smp_1.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\tcptop\tcptop.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\UDPdump\udpdump.c" "C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\UserLevelBridge\UserBridge.c"
+         UserBridge.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(85): warning C4013: “pcap_findalldevs_ex”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(85): error C2065: “PCAP_SRC_IF_STRING”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(168): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(171): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(172): error C2065: “PCAP_OPENFLAG_NOCAPTURE_LOCAL”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(173): error C2065: “PCAP_OPENFLAG_MAX_RESPONSIVENESS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(177): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(203): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(204): error C2065: “PCAP_OPENFLAG_NOCAPTURE_LOCAL”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(205): error C2065: “PCAP_OPENFLAG_MAX_RESPONSIVENESS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\userlevelbridge\userbridge.c(209): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         udpdump.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\udpdump\udpdump.c(84): warning C4013: “pcap_findalldevs_ex”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\udpdump\udpdump.c(84): error C2065: “PCAP_SRC_IF_STRING”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\udpdump\udpdump.c(121): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\udpdump\udpdump.c(124): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\udpdump\udpdump.c(128): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         tcptop.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\tcptop\tcptop.c(60): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\tcptop\tcptop.c(60): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\tcptop\tcptop.c(60): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         smp_1.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\smp_1\smp_1.c(59): warning C4013: “pcap_findalldevs_ex”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\smp_1\smp_1.c(59): error C2065: “PCAP_SRC_IF_STRING”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\smp_1\smp_1.c(96): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\smp_1\smp_1.c(96): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\smp_1\smp_1.c(96): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         sendcap.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(45): error C2065: “PCAP_BUF_SIZE”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(45): error C2057: 应输入常量表达式
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(45): error C2466: 不能分配常量大小为 0 的数组
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(45): error C2133: “source”: 未知的大小
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(49): error C2065: “pcap_send_queue”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(49): error C2065: “squeue”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(49): warning C4552: “*”: 运算符不起任何作用；应输入带副作用的运算符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(82): warning C4013: “pcap_createsrcstr”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(83): error C2065: “PCAP_SRC_FILE”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(95): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(95): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(95): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(102): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(102): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(117): error C2065: “squeue”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(117): warning C4013: “pcap_sendqueue_alloc”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(122): warning C4013: “pcap_sendqueue_queue”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(122): error C2065: “squeue”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(134): warning C4013: “pcap_sendqueue_destroy”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(134): error C2065: “squeue”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(142): warning C4013: “pcap_sendqueue_transmit”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(142): error C2065: “squeue”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(142): error C2223: “->len”的左侧必须指向结构/联合
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\sendcap\sendcap.c(155): error C2065: “squeue”: 未声明的标识符
+         pktdump_ex.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pktdump_ex\pktdump_ex.c(68): warning C4013: “pcap_findalldevs_ex”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pktdump_ex\pktdump_ex.c(68): error C2065: “PCAP_SRC_IF_STRING”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pktdump_ex\pktdump_ex.c(107): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pktdump_ex\pktdump_ex.c(109): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pktdump_ex\pktdump_ex.c(113): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pktdump_ex\pktdump_ex.c(124): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pktdump_ex\pktdump_ex.c(128): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         pcap_filter.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pcap_filter\pcap_filter.c(96): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pcap_filter\pcap_filter.c(98): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\pcap_filter\pcap_filter.c(102): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         TestPacketSend.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\packetdriver\testpacketsend\testpacketsend.c(121): warning C4133: “函数”: 从“char [8192]”到“PTSTR”的类型不兼容
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\packetdriver\testpacketsend\testpacketsend.c(236): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         TestPacketCapture.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\packetdriver\testpacketcapture\testpacketcapture.c(85): warning C4133: “函数”: 从“char [8192]”到“PTSTR”的类型不兼容
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\packetdriver\testpacketcapture\testpacketcapture.c(245): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         GetMacAddress.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\packetdriver\getmacaddress\getmacaddress.c(65): warning C4133: “函数”: 从“char [8192]”到“PTSTR”的类型不兼容
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\packetdriver\getmacaddress\getmacaddress.c(153): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         sendpack.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\sendpack.c(22): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\sendpack.c(24): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\sendpack.c(28): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         savedump.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\savedump.c(26): warning C4013: “pcap_findalldevs_ex”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\savedump.c(26): error C2065: “PCAP_SRC_IF_STRING”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\savedump.c(64): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\savedump.c(67): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\savedump.c(71): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         readfile_ex.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile_ex.c(10): error C2065: “PCAP_BUF_SIZE”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile_ex.c(10): error C2057: 应输入常量表达式
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile_ex.c(10): error C2466: 不能分配常量大小为 0 的数组
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile_ex.c(10): error C2133: “source”: 未知的大小
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile_ex.c(23): warning C4013: “pcap_createsrcstr”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile_ex.c(24): error C2065: “PCAP_SRC_FILE”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile_ex.c(36): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile_ex.c(39): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile_ex.c(43): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         readfile.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile.c(12): error C2065: “PCAP_BUF_SIZE”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile.c(12): error C2057: 应输入常量表达式
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile.c(12): error C2466: 不能分配常量大小为 0 的数组
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile.c(12): error C2133: “source”: 未知的大小
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile.c(22): warning C4013: “pcap_createsrcstr”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile.c(23): error C2065: “PCAP_SRC_FILE”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile.c(35): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile.c(38): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\readfile.c(42): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         basic_dump_ex.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump_ex.c(21): warning C4013: “pcap_findalldevs_ex”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump_ex.c(21): error C2065: “PCAP_SRC_IF_STRING”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump_ex.c(58): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump_ex.c(61): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump_ex.c(65): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         basic_dump.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump.c(16): warning C4013: “pcap_findalldevs_ex”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump.c(16): error C2065: “PCAP_SRC_IF_STRING”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump.c(53): warning C4013: “pcap_open”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump.c(56): error C2065: “PCAP_OPENFLAG_PROMISCUOUS”: 未声明的标识符
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\misc\basic_dump.c(60): warning C4047: “=”:“pcap_t *”与“int”的间接级别不同
+         iflist.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\iflist\iflist.c(71): warning C4013: “pcap_findalldevs_ex”未定义；假设外部返回 int
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-remote\iflist\iflist.c(177): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         udpdump.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\udpdump\udpdump.c(243): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         sendpack.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\sendpack\sendpack.c(69): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         savedump.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\savedump\savedump.c(112): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         readfile_ex.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\readfile_ex\readfile_ex.c(57): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         readfile.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\readfile\readfile.c(62): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         pktdump_ex.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\pktdump_ex\pktdump_ex.c(167): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         pcap_filter.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\pcap_filter\pcap_filter.c(180): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         iflist.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\iflist\iflist.c(173): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         basic_dump_ex.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\basic_dump_ex\basic_dump_ex.c(107): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+         basic_dump.c
+     1>c:\users\administrator\desktop\winpcap\程序引入需要的include和lib\wpdpack_4_1_2\wpdpack\examples-pcap\basic_dump\basic_dump.c(110): error C2857: 在源文件中没有找到用 /Ycstdafx.h 命令行选项指定的“#include”语句
+     1>已完成生成项目“d:\my documents\visual studio 2013\Projects\winpcap_filter_ftp\winpcap_filter_ftp\winpcap_filter_ftp.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:18.66

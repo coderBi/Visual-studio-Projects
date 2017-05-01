@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\bittypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\ip6_misc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\Packet32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap\bluetooth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap\bpf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap\namedb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap\pcap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap\sll.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap\usb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap\vlan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap-bpf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap-namedb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap-stdinc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\pcap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\remote-ext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Include\Win32-Extensions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\basic_dump\basic_dump.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\basic_dump_ex\basic_dump_ex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\iflist\iflist.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\pcap_filter\pcap_filter.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\pktdump_ex\pktdump_ex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\readfile\readfile.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\readfile_ex\readfile_ex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\savedump\savedump.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\sendpack\sendpack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\UDPdump\udpdump.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\iflist\iflist.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\basic_dump.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\basic_dump_ex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\readfile.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\readfile_ex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\savedump.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\misc\sendpack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\PacketDriver\GetMacAddress\GetMacAddress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\PacketDriver\TestPacketCapture\TestPacketCapture.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\PacketDriver\TestPacketSend\TestPacketSend.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\pcap_filter\pcap_filter.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\pcap_fopen\pcap_fopen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\pktdump_ex\pktdump_ex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\sendcap\sendcap.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\smp_1\smp_1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\tcptop\tcptop.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\UDPdump\udpdump.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-remote\UserLevelBridge\UserBridge.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winpcap_filter_ftp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\annotated.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\classes.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\daemon_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\daemon_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\deprecated.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\doxygen__groups_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\fileconf_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\fileconf_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\files.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\funcs_2pcap_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\funcs_2pcap_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\functions.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\functions_vars.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x62.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x63.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x64.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x65.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x66.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x67.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x68.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x69.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x6a.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x6b.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x6d.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x6e.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x6f.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x70.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x72.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x73.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x74.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_0x75.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_defs.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_enum.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_eval.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_func.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_type.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\globals_vars.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__compilation.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__internals.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__language.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__NPF.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__NPF__code.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__NPF__include.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__NPF__ioctl.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__NPF__jitter.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__packetapi.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remote.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remotefunc.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remote__auth__methods.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remote__open__flags.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remote__pri__func.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remote__pri__struct.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remote__samp__methods.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remote__source__ID.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remote__source__string.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__remote__struct.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcapfunc.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcapsamps.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__def.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut1.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut2.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut3.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut4.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut5.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut6.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut7.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut8.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\group__wpcap__tut9.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\incs_2pcap_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\incs_2pcap_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\index.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\ioctls_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\ioctls_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\jitter_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\jitter_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\main.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\main_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\modules.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\Packet_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\Packet_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\pages.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\pcap-remote_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\pcap-remote_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\remote-ext_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\remote-ext_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\rpcapd_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\rpcapd_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structactivehosts.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structactive__pars.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structbinary__stream.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structdaemon__slpars.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structJIT__BPF__Filter.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structPacketHeader.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structpacket__file__header.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structpcap__addr.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structpcap__file__header.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structpcap__if.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structpcap__pkthdr.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structpcap__rmtauth.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structpcap__samp.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structpcap__send__queue.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structpcap__stat.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__auth.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__filter.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__filterbpf__insn.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__findalldevs__if.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__findalldevs__ifaddr.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__header.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__openreply.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__pkthdr.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__sampling.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__startcapreply.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__startcapreq.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structrpcap__stats.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\structsf__pkthdr.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\struct__DEVICE__EXTENSION.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\struct__INTERNAL__REQUEST.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\struct__OPEN__INSTANCE.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\struct__PACKET__OID__DATA.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\struct__PACKET__RESERVED.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\struct____CPU__Private__Data.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\tree.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\utils_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\utils_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\Win32-Extensions_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\Win32-Extensions_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\win32-svc_8h.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\win32-svc_8h_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__remote_8htm.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__remote_8htm_source.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut1_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut2_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut3_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut4_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut5_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut6_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut7_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut8_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut9_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\html\wpcap__tut_8txt.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\docs\WinPcap_docs.html" />
+    <None Include="C:\Users\Administrator\Desktop\winpcap\程序引入需要的include和lib\WpdPack_4_1_2\WpdPack\Examples-pcap\UpgradeLog.htm" />
+  </ItemGroup>
+</Project>
