@@ -1,4 +1,4 @@
-﻿生成启动时间为 2017/4/23 23:27:09。
+﻿生成启动时间为 2017/5/15 12:18:05。
      1>项目“d:\my documents\visual studio 2013\Projects\Regex\Regex\Regex.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Regex.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Regex.cpp
@@ -11,4 +11,4 @@
 
 生成成功。
 
-已用时间 00:00:03.49
+已用时间 00:00:03.13

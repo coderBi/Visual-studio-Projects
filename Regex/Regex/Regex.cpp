@@ -68,6 +68,20 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "before: " << str << endl << "after: " << rp << endl;
 	cout << endl;
 
+	//测试取标签里面内容
+	mode = "<(.*?)>(.*?)</\\1>";
+	str = "<邮编>51800</邮编><a>hello</a>";
+	while (regex_search(str, sm, regex(mode))){
+		//一次匹配的结果放到一个sm中  sm[0]后面的是子表达式结果
+		for (auto it = sm.begin(); it != sm.end(); ++it){
+			//输出一个匹配结果
+			cout << (*it) << " ";
+		}
+		cout << endl;
+		//重置搜索字符串 将剩下的字符串赋给toSearch接着搜索
+		str = sm.suffix().str();
+	}
+
 	getchar();
 	return 0;
 }
