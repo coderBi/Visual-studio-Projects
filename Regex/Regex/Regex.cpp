@@ -21,7 +21,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	/*********************regex_match 获取匹配结果  中的子表达式*************************/
 	///存储的结果中 index=0是全匹配结果  1是子表达式1结果
 	//方式1 
-	cmatch cm; //用来保存匹配的结果，每一个结果项存的是char* cmath中的c是char*
+	cmatch cm; //用来保存匹配的结果，每一个结果项存的是char* cmatch中的c是char*
 	regex_match(s1.c_str(), cm, r1);
 	for (unsigned i = 0; i < cm.size(); ++i)
 		cout << cm[i] << endl;
