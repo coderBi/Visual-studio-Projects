@@ -26,7 +26,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (unsigned i = 0; i < cm.size(); ++i)
 		cout << cm[i] << endl;
 	cout << endl;
-	delete cm;
 	//方式2
 	smatch sm; //用来保存匹配的结果，每一个结果项存的是string smath中的s是string
 	regex_match(s1, sm, r1);
